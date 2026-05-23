@@ -28,7 +28,14 @@ jobs:
       run: | 
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    
+
+    - name: Debug
+      run: |
+        pwd 
+        ls -la
+        find . -type f
+        python -c "import sys; print(sys.path)"
+
     - name: Rodar testes 
       run: | 
         pytest
