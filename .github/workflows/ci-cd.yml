@@ -38,7 +38,7 @@ jobs:
 
     - name: Rodar testes 
       run: | 
-        pytest
+        PYTHONPATH=. pytest
     
     - name: Rodar lint
       run: | 
